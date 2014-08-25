@@ -1,0 +1,22 @@
+iextends ../shared/template
+block content
+  .container
+    #banner.page-header
+      .row
+        .col-sx-12
+          h2 Your New trip !
+          small Test para todos
+  .panel.panel-default
+    .panel-body
+      .row
+        form(class='form-group', role='form',method='post', action='/register')
+          .col-xs-5
+            .from-group
+              label(for='emial') Email
+              input#name.form-control(type='email', placeholder='Email',name='email')
+            .form-group
+              label(for='password') Password:
+              input#gasCost.from-control(type='password',placeholder='',name='password')
+            button.btn.btn-primary.btn-lg(type='submit') Submit
+
+block scripts

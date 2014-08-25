@@ -1,0 +1,21 @@
+extends ../shared/template
+block content
+  .container
+    #banner.page-header
+      .row
+        .col-sx-12
+          h2 Login form
+  .panel.panel-default
+    .panel-body
+      .row
+        form(class='form-group', role='form',method='post', action='/login')
+          .col-xs-5
+            .from-group
+              label(for='emial') Email
+              input#email.form-control(type='email', placeholder='Email',name='email')
+            .form-group
+              label(for='password') Password:
+              input#password.from-control(type='password',placeholder='',name='password')
+            button.btn.btn-primary.btn-lg(type='submit') Register
+         .col-xs-9
+block scripts
